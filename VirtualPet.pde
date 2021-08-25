@@ -16,6 +16,23 @@ ellipse(295,250,90,70);
 ellipse(200,265,140,195);
 ellipse(200,120,170,170);
 
+//8/25
+size(400,400);
+fill(245,240,89);
+//wings
+ellipse(100,250,90,70);
+ellipse(295,250,90,70);
+//head
+ellipse(200,265,140,195);
+noFill();
+fill(10,10,10);
+rect(135,230,130,30);
+ellipse(200,265,140,50);
+
+// black ellipse
+fill(10,10,10);
+noFill();
+ellipse(200,120,170,170);
 
 }
 
