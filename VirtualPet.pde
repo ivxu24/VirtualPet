@@ -5,6 +5,8 @@ size (400,400);
 void draw(){ 
 //8/26
 //stinger
+fill(10,10,10);
+triangle(200,400,180,320,220,320);
 
 noStroke();
 fill(234,219,80);
@@ -33,6 +35,3 @@ ellipse(200,300,120,30);
 stroke(1);
 noFill();
 ellipse(200,100,170,170);
-
-fill(10,10,10);
-triangle(200,400,180,320,220,320);
