@@ -2,12 +2,12 @@
 void setup(){
 size (400,400);
 }
+
 void draw(){ 
 //8/26
 //stinger
 fill(10,10,10);
 triangle(200,400,180,320,220,320);
-
 noStroke();
 fill(234,219,80);
 //wings
