@@ -108,3 +108,32 @@ line(260,10,290,15);
 
 }
 /*
+
+//other light sensor
+import processing.serial.*;
+import cc.arduino.*;
+Arduino arduino;
+float rot = 0;
+int rButton =0;
+public void setup() {
+  size(400, 400);
+  arduino = new Arduino(this, Arduino.list()[0], 57600); //change the [0] to a [1] or [2] etc. if your program doesn't work
+}
+
+public void draw() {
+  background(199,201,229);
+  rButton = arduino.analogRead(1);
+  if(rButton>500)
+    fill(177,219,224);
+   else
+     noStroke();
+     fill(227,213,57);
+    ellipse(170,170,200,200);
+  int y=arduino.analogRead(5);
+  translate(250,250);
+  rotate(rot);
+  fill(170,154,101);
+  ellipse(0,2*y,50,50);
+  rot = rot + 0.1;
+}
+
